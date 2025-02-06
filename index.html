@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GPA Calculator</h1>
+        <div class="input-group">
+            <label for="subjectCount">Number of Subjects:</label>
+            <input type="number" id="subjectCount" min="1" placeholder="Enter number of subjects">
+        </div>
+        <button onclick="generateInputs()">Generate Inputs</button>
+
+        <div id="subjectsContainer"></div>
+
+        <button onclick="calculateGPA()" style="display: none;" id="calculateButton">Calculate GPA</button>
+
+        <div class="result" id="result"></div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Grade</th>
+                    <th>GPA Value</th>
+                    <th>Percentage Range</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A</td>
+                    <td>4.0</td>
+                    <td>90-100%</td>
+                </tr>
+                <tr>
+                    <td>A-</td>
+                    <td>3.7</td>
+                    <td>85-89%</td>
+                </tr>
+                <tr>
+                    <td>B+</td>
+                    <td>3.3</td>
+                    <td>80-84%</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>3.0</td>
+                    <td>75-79%</td>
+                </tr>
+                <tr>
+                    <td>B-</td>
+                    <td>2.7</td>
+                    <td>70-74%</td>
+                </tr>
+                <tr>
+                    <td>C+</td>
+                    <td>2.3</td>
+                    <td>65-69%</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>2.0</td>
+                    <td>60-64%</td>
+                </tr>
+                <tr>
+                    <td>C-</td>
+                    <td>1.7</td>
+                    <td>56-59%</td>
+                </tr>
+                <tr>
+                    <td>D+</td>
+                    <td>1.3</td>
+                    <td>54-56%</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>1.0</td>
+                    <td>50-53%</td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td>0.0</td>
+                    <td>Below 50%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
